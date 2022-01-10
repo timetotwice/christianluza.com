@@ -1,0 +1,84 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="widht=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>My Portfolio </title>
+    <link rel="shortcut icon" type="images" href="logo.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <a href="#" class="logo">Portfolio</a>
+        <div class="toggle"></div>
+        <ul>
+            <li>
+                <a href="#">Home</a></li>
+            <li>
+                <a href="#">About</a></li>
+            <li>
+                <a href="#">Services</a></li>
+            <li>
+                <a href="#">Contact</a></li>
+        </ul>
+    </header>
+    <section class="banner">
+        <div class="textBx">
+            <h2>Hello I'm <br><span>Christian Luza</span></h2>
+            <h3>I'm a ICT Student</h3>
+            <a href="#" class="btn">About Me</a>
+        </div>
+    </section>
+    <section class="about">
+        <div class="heading">
+            <h2>About Me</h2>
+        </div>
+        <div class="content">
+            <div class="contentBx w50">
+                <h3>I'm a Front End Developer</h3>
+                <p>
+                    Hi, I'm Christian Luza, 16 years old. A SHS-ICT Student at STI College Lucena. An aspiring Web Developer/Software Engineer.<br> Hoping to learn new things from programming.
+                    <br><br><br>Currently, I'm focusing on Web Development.
+                </p>
+            </div>
+            <div class="w50">
+                <img src="pic2.jpeg" class="img">
+            </div>
+        </div>
+    </section>
+    <section class="services">
+        <div class="heading white">
+            <h2>Our Services</h2>
+            <p>We make snowman and we can make a Spider Web</p>
+        </div>
+        <div class="content">
+            <div class="servicesBx">
+                <img src="pic4.jpeg">
+                <h2>Web Design</h2>
+                <p>I can make web like Spider-man.</p>
+            </div>
+            <div class="servicesBx">
+                <img src="pic3.jpeg">
+                <h2>Content Writing</h2>
+                <p>I'm a Writer to I can write your name reversed.</p>
+            </div>
+            <div class="servicesBx">
+                <img src="pic5.jpeg">
+                <h2>Video Editing</h2>
+                <p>I can also edit video, I can edit you wearing a spider-man suit.</p>
+            </div>
+        </div>
+    </section>
+    <script type="text/javascript">
+        window.addEventListener('scroll', function() {
+            var header = document.querySelector('header');
+            header.classList.toggle('sticky', window.scrollY > 0);
+        });
+    </script>
+
+</body>
+
+
+</html>
